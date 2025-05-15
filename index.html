@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Satyajit Sahoo - Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Satyajit Sahoo</a>
+      <div class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+         <a href="https://drive.google.com/file/d/1jp852P8IfPliITYl9V8Tixfw8bgJqwNh/view?usp=drivesdk" class="btn-hire" target="_blank">Resume</a>
+        <a href="https://forms.gle/iJeSk1kVFamNX5oaA" class="btn-hire" target="_blank">Hire Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Satyajit</span> 👋</h1>
+      <p><strong>Web Developer</strong> building fast, scalable websites focused on performance and user experience.</p>
+
+      <div class="hero-buttons">
+        <a href="#skills" class="btn-primary">View Skills</a>
+        <a href="#projects" class="btn-secondary">See Projects</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="image/PROFILE.png" alt="Satyajit Sahoo" />
+    </div>
+  </header>
+
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <p class="section-subtitle">Technologies & tools I work with</p>
+    <div class="skill-cards">
+      <div class="skill-card">
+        <img src="image/html-logo.webp" alt="HTML5" />
+        <h3>HTML5</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/css-logo.webp" alt="CSS3" />
+        <h3>CSS3</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/javascript-logo.webp" alt="JavaScript" />
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/java.png" alt="Java" />
+        <h3>Java</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/python.jpg" alt="Python" />
+        <h3>Python</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/sql.jpg" alt="SQL" />
+        <h3>SQL</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/react-logo.webp" alt="React.js" />
+        <h3>React.js</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/node-logo.webp" alt="Node.js" />
+        <h3>Node.js (basic)</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/my sql.jpg" alt="MySQL" />
+        <h3>MySQL</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/mongodb.png" alt="MongoDB" />
+        <h3>MongoDB (basic)</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/git.png" alt="Git" />
+        <h3>Git</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/github logo.png" alt="GitHub" />
+        <h3>GitHub</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/vs code.jpg" alt="VS Code" />
+        <h3>VS Code</h3>
+      </div>
+      <div class="skill-card">
+        <img src="image/wordpress.png" alt="WordPress" />
+        <h3>WordPress</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <p class="section-subtitle">Some of my work</p>
+    <div class="project-list">
+      <article class="project-card">
+        <img src="image/bank mng syst.png" alt="Banking Project" />
+        <div class="project-content">
+          <h3>Bank Management System</h3>
+          <p>Created a banking interface with account creation, deposit/withdrawal features using HTML, CSS, JS, MySQL.</p>
+        </div>
+      </article>
+      <article class="project-card">
+        <img src="image/univ atted stym.jpg" alt="ID Match Project" />
+        <div class="project-content">
+          <h3>University Attendance System</h3>
+          <p>Developed a web-based app to manage attendance using HTML, CSS, JS, and basic backend. Implemented database integration for record storage.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p class="section-subtitle">Let's build something great together</p>
+    <form action="https://formspree.io/f/mpwdkbww" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="8" required placeholder="Your message"></textarea>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Satyajit Sahoo</p>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/satyajit-sahoo-a746bb289/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:satyajitsaho7@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
