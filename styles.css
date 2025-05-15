@@ -35,6 +35,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .nav-logo {
   font-size: 1.8rem;
@@ -47,13 +48,22 @@ body {
 .navbar.scrolled .nav-logo {
   color: #fff;
 }
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-top: 0;
+}
 .nav-links a {
-  margin-left: 25px;
   color: #0d47a1;
   font-weight: 600;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 .navbar.scrolled .nav-links a {
   color: #fff;
@@ -72,12 +82,12 @@ body {
   width: 100%;
 }
 .btn-hire {
-  padding: 8px 18px;
   background-color: #0d47a1;
   color: #fff !important;
   border-radius: 30px;
   font-weight: 700;
   transition: background-color 0.3s ease;
+  padding: 8px 18px;
 }
 .btn-hire:hover {
   background-color: #1976d2;
@@ -91,9 +101,11 @@ body {
   align-items: center;
   padding: 50px 20px;
   gap: 50px;
+  flex-wrap: wrap;
 }
 .hero-content {
-  flex: 1;
+  flex: 1 1 400px;
+  min-width: 280px;
 }
 .hero-content h1 {
   font-size: 3.5rem;
@@ -110,15 +122,26 @@ body {
   max-width: 500px;
   color: #444;
 }
+
+/* Fix for hero buttons: wrap and responsive */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;   /* allow buttons to wrap */
+  justify-content: center;
+}
 .hero-buttons a {
+  flex: 1 1 140px;   /* min width but flexible */
+  text-align: center;
   padding: 12px 30px;
-  margin-right: 20px;
   border-radius: 30px;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 140px;
 }
+
 .btn-primary {
   background-color: #0d47a1;
   color: #fff;
@@ -136,13 +159,16 @@ body {
   background-color: #0d47a1;
   color: #fff;
 }
+
 .hero-image {
-  flex: 1;
+  flex: 1 1 300px;
+  min-width: 280px;
   display: flex;
   justify-content: center;
 }
 .hero-image img {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   border-radius: 50%;
   box-shadow: 0 15px 30px rgba(13, 71, 161, 0.3);
   transition: transform 0.3s ease;
@@ -378,17 +404,15 @@ footer {
 
   /* Hero buttons responsive */
   .hero-buttons {
-    display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
     justify-content: center;
   }
   .hero-buttons a {
+    flex: unset;
     width: 100%;
-    max-width: 250px;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 1.1rem;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
